@@ -1,0 +1,81 @@
+.Flashcard {
+  border: $transparent-border;
+  border-radius: 5px;
+  background-color: $light-seafoam;
+  width: 75%;
+  margin: 10px 0px;
+  padding: 28px;
+
+  .question-counter {
+    font-size: 12px;
+    text-align: right;
+  }
+  
+  .flashcard-question {
+    font-size: 18px;
+    margin: 20px 0px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  
+  .flashcard-buttons {
+    padding: 10px;
+    width: 33%;
+    margin: 0% 1%;
+  }
+  
+  .learn-more {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+
+  .mdn-link {
+    font-size: 12px;
+    text-align: right;
+  
+    &:hover {
+      cursor: pointer;
+    }
+  
+    &:visited {
+      color: black;
+    }
+  }
+}
+
+// dynamic css properties: updated based on correct/incorrect
+.correct-answer {
+  border: $correct-border;
+}
+
+.incorrect-answer {
+  border: $incorrect-border;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
+@media screen and (max-width: 755px) {
+  .Flashcard {
+    width: 90%;
+    padding: 8px;
+
+    .flashcard-buttons {
+      padding: 5px;
+      font-size: 10px;
+    }
+  }
+}

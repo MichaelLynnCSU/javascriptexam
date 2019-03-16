@@ -1,0 +1,78 @@
+.NavBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(#6495ED, $deep-teal);
+  padding: 20px 0px 30px 0px;
+  
+  .quizzy-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    color: #fdf79b;
+ 
+
+  }
+  
+  .filter-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+
+    .choose-category {
+      font-weight: bold;
+      color: #FFF;
+      font-size: 16px;
+    }
+    
+    .filter-button {
+      padding: 5px;
+      margin: 0px 10px;
+      width: 25%;
+    }
+  }
+}
+
+.buttons {
+  font-size: 13px;
+  border-radius: 10px;
+  transition: all 300ms ease;
+  background-color: #90EE90;
+
+  
+  &:hover {
+    cursor: pointer;
+    background-color: #00FF00;
+    box-shadow: 1px 1.5px 1px #9b9b9b;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .NavBar {
+    padding: 10px 0px;
+    
+    .filter-section {
+      flex-direction: column;
+
+      .filter-button {
+        margin: 10px 0px;
+        width: 70%;
+      }
+    
+      .choose-category {
+        text-align: center;
+      }
+    }
+  }
+
+  .buttons {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,41 @@
+.PlayerControl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 81vh;
+  background-image: linear-gradient($whitesmoke, #FFF);
+  width: 30%;
+  margin: auto;
+
+  .player-options {
+    padding-top: 14%;
+    color: #2d2d2d;
+  }
+
+  .view-incorrect-button,
+  .reset-button {
+    width: 45%;
+    padding: 20px;
+    margin-top: 35px;
+  }
+}
+
+
+@media screen and (max-width: 755px) {
+  .PlayerControl {
+    width: 100%;
+    height: auto;
+    padding-top: 2%;
+
+    .player-options {
+      padding-top: 3%;
+    }
+  
+    .view-incorrect-button,
+    .reset-button {
+      width: 45%;
+      padding: 10px;
+      margin: 10px 0px 10px 0px;
+    }
+  }
+}
